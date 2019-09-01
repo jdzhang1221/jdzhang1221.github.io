@@ -252,6 +252,272 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/02/java容器/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jundong Zhang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="冲出亚洲">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/09/02/java容器/" itemprop="url">java容器</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-02T00:56:52+08:00">
+                2019-09-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="java容器"><a href="#java容器" class="headerlink" title="java容器"></a>java容器</h1><h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>数组是一组存储相关类型变量的容器。</p>
+<h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><p>数组一旦生成，其容量就不能改变。</p>
+<h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><h3 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h3><p>集合是一个存放对象引用的容器。</p>
+<h3 id="特点-1"><a href="#特点-1" class="headerlink" title="特点"></a>特点</h3><p>集合可以自动调节自己的尺寸。可以将任意数量的对象放置到容器中。</p>
+<p>集合可以存储不同数据类型的引用，但是不能存储基本数据类型。</p>
+<table>
+<thead>
+<tr>
+<th>基本类型</th>
+<th>大小</th>
+<th>最小值</th>
+<th>最大值</th>
+<th>包装器类型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>boolean</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Boolean</td>
+</tr>
+<tr>
+<td>char</td>
+<td>16-bit</td>
+<td>Unicode 0</td>
+<td>Unicode 2^16 -1</td>
+<td>Character</td>
+</tr>
+<tr>
+<td>byte</td>
+<td>8-bit</td>
+<td>-128</td>
+<td>127</td>
+<td>Byte</td>
+</tr>
+<tr>
+<td>short</td>
+<td>16-bit</td>
+<td>-2^15</td>
+<td>2^15 -1</td>
+<td>Short</td>
+</tr>
+<tr>
+<td>int</td>
+<td>32-bit</td>
+<td>-2^31</td>
+<td>2^31 -1</td>
+<td>Integer</td>
+</tr>
+<tr>
+<td>long</td>
+<td>64-bit</td>
+<td>-2^63</td>
+<td>2^63 -1</td>
+<td>Long</td>
+</tr>
+<tr>
+<td>float</td>
+<td>32-bit</td>
+<td>IEEE754</td>
+<td>IEEE754</td>
+<td>Float</td>
+</tr>
+<tr>
+<td>double</td>
+<td>64-bit</td>
+<td>IEEE754</td>
+<td>IEEE754</td>
+<td>Double</td>
+</tr>
+<tr>
+<td>void</td>
+<td>-</td>
+<td>-</td>
+<td></td>
+<td>Void</td>
+</tr>
+</tbody></table>
+<h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><p>集合类的基本类型是List、Set、Queue和Map。</p>
+<p><img src="/images/Java%E5%AE%B9%E5%99%A8%E7%AE%80%E5%8C%96%E5%9B%BE.jpg" alt></p>
+<p>总结：</p>
+<ul>
+<li><p>java集合的根接口是Collection，它又继承了迭代接口Iterable。</p>
+</li>
+<li><p>List接口和Set接口继承了Collection,而<strong>Map是独立接口，没有继承Collection</strong>。</p>
+</li>
+<li><p>List的常用集合类有：ArrayList、LinkedList、Vector、Stack</p>
+</li>
+<li><p>Set常用集合类有：HashSet、TreeSet、LinkedHashSet</p>
+</li>
+<li><p>Map常用集合类有：HashMap、TreeMap、LinkedHashMap、HashTable</p>
+</li>
+<li><p>Queue常用类：ListedList、PriotiryQueue</p>
+</li>
+<li><p>迭代器有：Iterator、ListIterator</p>
+</li>
+</ul>
+<h4 id="List"><a href="#List" class="headerlink" title="List"></a>List</h4><p>特点</p>
+<ul>
+<li>集合中的元素允许重复。</li>
+<li>List集合中元素是有序的。（插入顺序保存元素</li>
+<li>集合中元素允许通过索引访问或设置</li>
+</ul>
+<p>常用类简介：</p>
+<p>ArrayList，在随机访问方面比较快，但是在List的中间插入或移除元素时较慢。</p>
+<p>LinkedList，通过代价较低的在List中间进行的插入和删除操作，提供了优化的顺序访问。在随机访问方面比较慢。</p>
+<p>Stack，”后进先出“（LIFO）的容器。LinkedList具有能够直接实现栈的所有功能的方法。</p>
+<h4 id="Set"><a href="#Set" class="headerlink" title="Set"></a>Set</h4><p>特点：</p>
+<ul>
+<li>不接受重复元素</li>
+<li>集合中的元素不一定保证有序</li>
+</ul>
+<p>常用类简介：</p>
+<p>HashSet，提供了最快的查询速度。（使用了散列</p>
+<p>TreeSet，保持元素处于排序状态。（将元素存储在红-黑树数据结构中</p>
+<p>LinkedHashSet，通过散列提供了快速访问的能力，使用链表维护了元素的插入顺序</p>
+<h4 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h4><p>特点：</p>
+<ul>
+<li>Map没有实现Collection接口。</li>
+<li>是一种将对象与对象相关联的设计</li>
+<li>Map中不能包含相同的key</li>
+</ul>
+<p>常用类简介：</p>
+<p>HashMap，设计用来快速访问</p>
+<p>TreeMap，保持”键“始终处于排序状态，所以没有HashMap快</p>
+<p>LinkedHashMap。保持元素的插入顺序，通过散列提供快速访问能力</p>
+<h4 id="Queue"><a href="#Queue" class="headerlink" title="Queue"></a>Queue</h4><p>特点：</p>
+<ul>
+<li>队列是一个典型的先进先出（FIFO）的容器。</li>
+<li>常被当作一种可靠的将对象从程序的某一个区域传输到另一个区域的途径</li>
+<li>在并发编程中特别重要</li>
+</ul>
+<p>常用类简介：</p>
+<p>LinkedList，支持队列的行为，向上转型为Queue时，Queue接口窄化了对LinkedList的方法的访问权限，使得只有恰当的方法才可使用。</p>
+<p>PriorityQueue，优先级队列，声明下一个弹出元素时最需要的元素（具有最高的优先级）</p>
+<h4 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h4><p>特点：</p>
+<ul>
+<li>不关心容器的类型。（将遍历序列的操作与序列底层的结构分离</li>
+</ul>
+<p>常用对象简介：</p>
+<p>Iterator，只能单项移动</p>
+<p>1） 使用方法Iterator方法要求容器返回一个Iterator，Iterator将准备好返回序列的第一个元素。</p>
+<p>2） 使用hasnext（）检查序列中是否还有元素</p>
+<p>3） 使用next（）获得序列中的下一个元素</p>
+<p>4） 使用remove（）将迭代器新近返回的元素删除</p>
+<p>ListIterator，可以双向移动。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/30/Apache-Lucene简介/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -850,7 +1116,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -863,7 +1129,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
