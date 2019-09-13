@@ -87,10 +87,12 @@
 <meta property="og:site_name" content="Explore the unknown">
 <meta property="og:description" content="大型网站性能监控体系为什么要做监控  昨天下午，公司发生一起大批量创建订单异常事故，影响单量1600单左右，时长约8分钟，如果按照客单量500RMB计算，显然这是一笔不小的数目，是一起S1级的事故了。  大型网站的用户访问量在数量级上比小型网站大得多，一旦发生问题，对于业务的影响将非常大。 像淘宝、天猫这样的交易型网站，数分钟的不可用可能造成数亿甚至数十亿的损失。 大型网站的运行需要一个完善的监控">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-11T16:59:28.340Z">
+<meta property="og:image" content="http://yoursite.com/images/%E5%85%B3%E9%94%AE%E7%9B%91%E6%8E%A7%E6%8C%87%E6%A0%87.jpg">
+<meta property="og:updated_time" content="2019-09-13T03:33:32.688Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="大型网站性能监控体系">
 <meta name="twitter:description" content="大型网站性能监控体系为什么要做监控  昨天下午，公司发生一起大批量创建订单异常事故，影响单量1600单左右，时长约8分钟，如果按照客单量500RMB计算，显然这是一笔不小的数目，是一起S1级的事故了。  大型网站的用户访问量在数量级上比小型网站大得多，一旦发生问题，对于业务的影响将非常大。 像淘宝、天猫这样的交易型网站，数分钟的不可用可能造成数亿甚至数十亿的损失。 大型网站的运行需要一个完善的监控">
+<meta name="twitter:image" content="http://yoursite.com/images/%E5%85%B3%E9%94%AE%E7%9B%91%E6%8E%A7%E6%8C%87%E6%A0%87.jpg">
 
 
 
@@ -331,7 +333,106 @@
 <p>大型网站的用户访问量在数量级上比小型网站大得多，一旦发生问题，对于业务的影响将非常大。</p>
 <p>像淘宝、天猫这样的交易型网站，数分钟的不可用可能造成数亿甚至数十亿的损失。</p>
 <p>大型网站的运行需要一个完善的监控体系，监控的根本目的是发现问题并定位问题，是性能优化的基础。</p>
-<h2 id="监控设计"><a href="#监控设计" class="headerlink" title="监控设计"></a>监控设计</h2><h3 id="从问题排查思路看监控设计"><a href="#从问题排查思路看监控设计" class="headerlink" title="从问题排查思路看监控设计"></a>从问题排查思路看监控设计</h3><h3 id="监控的设计步骤"><a href="#监控的设计步骤" class="headerlink" title="监控的设计步骤"></a>监控的设计步骤</h3><h4 id="关键监控项梳理"><a href="#关键监控项梳理" class="headerlink" title="关键监控项梳理"></a>关键监控项梳理</h4><h4 id="关键监控项报警"><a href="#关键监控项报警" class="headerlink" title="关键监控项报警"></a>关键监控项报警</h4><h4 id="监控布点开发和设计"><a href="#监控布点开发和设计" class="headerlink" title="监控布点开发和设计"></a>监控布点开发和设计</h4><h4 id="监控展现设计"><a href="#监控展现设计" class="headerlink" title="监控展现设计"></a>监控展现设计</h4><h3 id="监控体系设计的目标和原则"><a href="#监控体系设计的目标和原则" class="headerlink" title="监控体系设计的目标和原则"></a>监控体系设计的目标和原则</h3><h4 id="准确性"><a href="#准确性" class="headerlink" title="准确性"></a>准确性</h4><h4 id="完整性"><a href="#完整性" class="headerlink" title="完整性"></a>完整性</h4><h4 id="实时性"><a href="#实时性" class="headerlink" title="实时性"></a>实时性</h4><h4 id="细分性"><a href="#细分性" class="headerlink" title="细分性"></a>细分性</h4><h4 id="聚合化"><a href="#聚合化" class="headerlink" title="聚合化"></a>聚合化</h4><h4 id="图标化"><a href="#图标化" class="headerlink" title="图标化"></a>图标化</h4><h4 id="可追溯"><a href="#可追溯" class="headerlink" title="可追溯"></a>可追溯</h4><h2 id="性能监控的关键指标"><a href="#性能监控的关键指标" class="headerlink" title="性能监控的关键指标"></a>性能监控的关键指标</h2><h3 id="应用监控"><a href="#应用监控" class="headerlink" title="应用监控"></a>应用监控</h3><h4 id="QPS"><a href="#QPS" class="headerlink" title="QPS"></a>QPS</h4><h4 id="RT"><a href="#RT" class="headerlink" title="RT"></a>RT</h4><h4 id="并发数"><a href="#并发数" class="headerlink" title="并发数"></a>并发数</h4><h4 id="异常监控"><a href="#异常监控" class="headerlink" title="异常监控"></a>异常监控</h4><h4 id="URL-监控"><a href="#URL-监控" class="headerlink" title="URL 监控"></a>URL 监控</h4><h4 id="关键方法监控"><a href="#关键方法监控" class="headerlink" title="关键方法监控"></a>关键方法监控</h4><h4 id="JVM监控"><a href="#JVM监控" class="headerlink" title="JVM监控"></a>JVM监控</h4><h3 id="系统监控"><a href="#系统监控" class="headerlink" title="系统监控"></a>系统监控</h3><h4 id="CPU资源监控"><a href="#CPU资源监控" class="headerlink" title="CPU资源监控"></a>CPU资源监控</h4><h4 id="网络监控"><a href="#网络监控" class="headerlink" title="网络监控"></a>网络监控</h4><h4 id="内存监控"><a href="#内存监控" class="headerlink" title="内存监控"></a>内存监控</h4><h4 id="磁盘监控"><a href="#磁盘监控" class="headerlink" title="磁盘监控"></a>磁盘监控</h4>
+<h2 id="监控设计"><a href="#监控设计" class="headerlink" title="监控设计"></a>监控设计</h2><h3 id="从问题排查思路看监控设计"><a href="#从问题排查思路看监控设计" class="headerlink" title="从问题排查思路看监控设计"></a>从问题排查思路看监控设计</h3><h4 id="问题发现"><a href="#问题发现" class="headerlink" title="问题发现"></a>问题发现</h4><p>通过监控能够直接判断出是否出了问题，是否对业务有影响，从这个角度来看，首先要考虑部署业务监控的能力，对业务的关键指标进行监控，同时根据业务周期性规律进行环比、同比的报警规则设置，出现对业务有直接影响的问题要立即报警。</p>
+<h4 id="定位问题"><a href="#定位问题" class="headerlink" title="定位问题"></a>定位问题</h4><p>首先排查应用是否产生了大量异常，当业务有损伤时，会看是否是应用本身出现问题了。</p>
+<p>其次看关键链路的调用次数是否变少了，</p>
+<ul>
+<li><p>可能原因之一，外部流量减少。</p>
+<ul>
+<li>正常业务的影响：活动或者节假日影响。</li>
+<li>网络链路加入异常：如外部接入核心交换，通常多个运行商接入，某些运营商出现网络问题，这个问题一旦出现会导致整体流量下滑。</li>
+</ul>
+</li>
+<li><p>可能原因之二：链路耗时变长，导致一定时间内处理的请求数变少了。</p>
+<ul>
+<li>交换机流量不均，某些机器的流量被打满，TCP重试，导致耗时边长。</li>
+<li>服务器流量不均</li>
+<li>应用集群个体异常，某些服务器存在问题。</li>
+<li>集群系统指标个体异常，集群中个别服务器存在问题，可能配置不同</li>
+<li>依赖方个体异常，某些依赖存在问题，导致访问异常</li>
+</ul>
+</li>
+</ul>
+<h3 id="监控的设计步骤"><a href="#监控的设计步骤" class="headerlink" title="监控的设计步骤"></a>监控的设计步骤</h3><h4 id="关键监控项梳理"><a href="#关键监控项梳理" class="headerlink" title="关键监控项梳理"></a>关键监控项梳理</h4><p><img src="/images/%E5%85%B3%E9%94%AE%E7%9B%91%E6%8E%A7%E6%8C%87%E6%A0%87.jpg" alt></p>
+<h4 id="关键监控项报警"><a href="#关键监控项报警" class="headerlink" title="关键监控项报警"></a>关键监控项报警</h4><ul>
+<li>临界点报警</li>
+<li>业务预警做重点关注报警，可以通过短信方式预警</li>
+</ul>
+<h4 id="监控布点开发和设计"><a href="#监控布点开发和设计" class="headerlink" title="监控布点开发和设计"></a>监控布点开发和设计</h4><p>监控需要各种数据的支持。布点要和关键指标关联。</p>
+<ul>
+<li>捕获关键异常，对关键异常进行日志记录，分级。</li>
+<li>对直接依赖的运行耗时进行日志记录。</li>
+<li>对反应业务指标的运行情况进行日志记录。</li>
+<li>正确处理错误码。</li>
+</ul>
+<h4 id="监控展现设计"><a href="#监控展现设计" class="headerlink" title="监控展现设计"></a>监控展现设计</h4><p>趋势化的监控比列表型展现更一目了然。</p>
+<p>确定合适的监控粒度，长段间距相结合。</p>
+<p>从粗到细，从汇总到细分的监控。</p>
+<h3 id="监控体系设计的目标和原则"><a href="#监控体系设计的目标和原则" class="headerlink" title="监控体系设计的目标和原则"></a>监控体系设计的目标和原则</h3><h4 id="准确性"><a href="#准确性" class="headerlink" title="准确性"></a>准确性</h4><ul>
+<li>监控系统应该一直持续可用。</li>
+<li>监控系统应该保持数据的准确性</li>
+</ul>
+<h4 id="完整性"><a href="#完整性" class="headerlink" title="完整性"></a>完整性</h4><p>在诊断过程中，需要把几乎所有需要的监控项监控完整</p>
+<h4 id="实时性"><a href="#实时性" class="headerlink" title="实时性"></a>实时性</h4><p>问题发生时要及时发现，避免因为监控的架构设计问题造成发现问题延迟。</p>
+<h4 id="细分性"><a href="#细分性" class="headerlink" title="细分性"></a>细分性</h4><p>细分化对于排查系统的瓶颈、追踪系统问题是非常关键的。</p>
+<h4 id="聚合化"><a href="#聚合化" class="headerlink" title="聚合化"></a>聚合化</h4><p>大型网站往往有数千台服务器，一个大型的应用集群可能需要上千台机器，查看这些机器的汇总表现非常重要。</p>
+<h4 id="图标化"><a href="#图标化" class="headerlink" title="图标化"></a>图标化</h4><p>将数字化的东西用图形的方式展示，人们通过图标很容易看到发生问题。</p>
+<h4 id="可追溯"><a href="#可追溯" class="headerlink" title="可追溯"></a>可追溯</h4><p>有些问题准瞬即逝，模拟和重现非常困难，因此监控结果需要保留一段时间。</p>
+<h2 id="性能监控的关键指标"><a href="#性能监控的关键指标" class="headerlink" title="性能监控的关键指标"></a>性能监控的关键指标</h2><h3 id="应用监控"><a href="#应用监控" class="headerlink" title="应用监控"></a>应用监控</h3><h4 id="QPS"><a href="#QPS" class="headerlink" title="QPS"></a>QPS</h4><p>QPS（Query per Second）表示每秒处理完成的请求数，是衡量系统吞吐量大小或者系统处理能力的指标，服务器的QPS越高，提供服务需要的机器就越少。每个系统都有自己的峰值QPS，表示系统最大的吞吐量。</p>
+<p>在做容量规划的时，峰值QPS作为容量规划的一个主要因子，来计算需要多少台机器。可以根据一定的数学计算得出业务访问需要多少QPS，再除以Peak QPS，就可以得出需要的机器数量。</p>
+<p>注:QPS和TPS是有区别的，TPS是每秒处理完成事务的过程数，一个请求可能包含多个事务处理过程。对于web请求而言，一个单独的请求算作一个query，所以通常QPS是衡量服务器性能的主要指标。</p>
+<h4 id="RT"><a href="#RT" class="headerlink" title="RT"></a>RT</h4><p>RT（Response Time）表示响应时间，它是从接收请求开始到服务器处理完成的时间差值。</p>
+<p>减少RT的方法，要么合并请求，将多次调用合并成一次调用，要么减少调用。减少远程接口调用，可以通过缓存架构升级或者去除多于调用来实现。</p>
+<h4 id="并发数"><a href="#并发数" class="headerlink" title="并发数"></a>并发数</h4><p>并发数是衡量系统压力的指标，并发数越大，系统压力越大。</p>
+<p>一般并发数是针对某个具体的链路而言的，并发数是同时在处理或者需要处理的任务数或者线程数。</p>
+<p>以上三个指标是最终系统运行中性能的表现，是各种资源综合作用的结果，与应用本身程序编写的问题、应用本身的特点和应用本身的架构都密切相关。</p>
+<h4 id="异常监控"><a href="#异常监控" class="headerlink" title="异常监控"></a>异常监控</h4><p>通常服务器端出现峰值时会出现一些异常，这些异常主要是程序本身的异常，最常见的异常包括RPC连接池异常、数据库连接池异常、超时异常、JVM异常。</p>
+<p>通常在单机或者集群进行压力测试时，异常作为停止的指标。</p>
+<h4 id="URL-监控"><a href="#URL-监控" class="headerlink" title="URL 监控"></a>URL 监控</h4><p>URL是WEB应用通常需要监控的，包含以下关键指标：</p>
+<ul>
+<li>调用量</li>
+<li>耗时</li>
+<li>错误数</li>
+<li>相关依赖明细</li>
+<li>状态码</li>
+<li>并发数</li>
+</ul>
+<h4 id="关键方法监控"><a href="#关键方法监控" class="headerlink" title="关键方法监控"></a>关键方法监控</h4><p>服务或者中间件，需要监控以下指标：</p>
+<ul>
+<li>耗时</li>
+<li>依赖明细</li>
+<li>异常</li>
+<li>并发数</li>
+</ul>
+<h4 id="JVM监控"><a href="#JVM监控" class="headerlink" title="JVM监控"></a>JVM监控</h4><ul>
+<li>分区监控</li>
+<li>垃圾回收次数</li>
+<li>垃圾回收时间</li>
+</ul>
+<h3 id="系统监控"><a href="#系统监控" class="headerlink" title="系统监控"></a>系统监控</h3><h4 id="CPU资源监控"><a href="#CPU资源监控" class="headerlink" title="CPU资源监控"></a>CPU资源监控</h4><p>CPU是是操作系统的调度中枢，是影响服务器端吞吐量的最重要因素。</p>
+<p>服务器峰值的处理能力取决于CPU的利用率和CPU的处理时间。所以监控CPU的使用情况，能够获知系统瓶颈的变化，以及在发现问题时，是否可以通过水平扩展机器数来解决问题。</p>
+<h4 id="网络监控"><a href="#网络监控" class="headerlink" title="网络监控"></a>网络监控</h4><p>网络监控通常指的是服务器网路监控，用于定位服务器网络瓶颈，通常看TCP的重传率，内部网络重传率超过1%，往往会造成访问延迟增加。</p>
+<p>网络监控包含以下关键指标：</p>
+<ul>
+<li>TCPretr</li>
+<li>网络I/O</li>
+<li>TCP连接数</li>
+</ul>
+<h4 id="内存监控"><a href="#内存监控" class="headerlink" title="内存监控"></a>内存监控</h4><p>系统的内存不足引发磁盘交换，很可能使内存成为“木桶短板”。</p>
+<p>内存监控包含以下关键指标：</p>
+<ul>
+<li>内存的使用量：物理内存的使用量</li>
+<li>swap I/O：交换到磁盘的量，常常是因为内存不够才发生的</li>
+</ul>
+<h4 id="磁盘监控"><a href="#磁盘监控" class="headerlink" title="磁盘监控"></a>磁盘监控</h4><p>磁盘I/O性能监控指标如下</p>
+<ul>
+<li>磁盘利用率（Utilization）</li>
+<li>服务时间（Service Time）</li>
+<li>I/O 等待队列长度（Queue Length）</li>
+<li>等待时间（Wait Time）</li>
+</ul>
+<p>参考：《大型网站性能优化实战》</p>
+
       
     </div>
     
@@ -504,7 +605,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#大型网站性能监控体系"><span class="nav-number">1.</span> <span class="nav-text">大型网站性能监控体系</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要做监控"><span class="nav-number">1.1.</span> <span class="nav-text">为什么要做监控</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#监控设计"><span class="nav-number">1.2.</span> <span class="nav-text">监控设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#从问题排查思路看监控设计"><span class="nav-number">1.2.1.</span> <span class="nav-text">从问题排查思路看监控设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#监控的设计步骤"><span class="nav-number">1.2.2.</span> <span class="nav-text">监控的设计步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#关键监控项梳理"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">关键监控项梳理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关键监控项报警"><span class="nav-number">1.2.2.2.</span> <span class="nav-text">关键监控项报警</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#监控布点开发和设计"><span class="nav-number">1.2.2.3.</span> <span class="nav-text">监控布点开发和设计</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#监控展现设计"><span class="nav-number">1.2.2.4.</span> <span class="nav-text">监控展现设计</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#监控体系设计的目标和原则"><span class="nav-number">1.2.3.</span> <span class="nav-text">监控体系设计的目标和原则</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#准确性"><span class="nav-number">1.2.3.1.</span> <span class="nav-text">准确性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#完整性"><span class="nav-number">1.2.3.2.</span> <span class="nav-text">完整性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#实时性"><span class="nav-number">1.2.3.3.</span> <span class="nav-text">实时性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#细分性"><span class="nav-number">1.2.3.4.</span> <span class="nav-text">细分性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#聚合化"><span class="nav-number">1.2.3.5.</span> <span class="nav-text">聚合化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#图标化"><span class="nav-number">1.2.3.6.</span> <span class="nav-text">图标化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#可追溯"><span class="nav-number">1.2.3.7.</span> <span class="nav-text">可追溯</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#性能监控的关键指标"><span class="nav-number">1.3.</span> <span class="nav-text">性能监控的关键指标</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#应用监控"><span class="nav-number">1.3.1.</span> <span class="nav-text">应用监控</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#QPS"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">QPS</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#RT"><span class="nav-number">1.3.1.2.</span> <span class="nav-text">RT</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#并发数"><span class="nav-number">1.3.1.3.</span> <span class="nav-text">并发数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#异常监控"><span class="nav-number">1.3.1.4.</span> <span class="nav-text">异常监控</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#URL-监控"><span class="nav-number">1.3.1.5.</span> <span class="nav-text">URL 监控</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关键方法监控"><span class="nav-number">1.3.1.6.</span> <span class="nav-text">关键方法监控</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#JVM监控"><span class="nav-number">1.3.1.7.</span> <span class="nav-text">JVM监控</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#系统监控"><span class="nav-number">1.3.2.</span> <span class="nav-text">系统监控</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#CPU资源监控"><span class="nav-number">1.3.2.1.</span> <span class="nav-text">CPU资源监控</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#网络监控"><span class="nav-number">1.3.2.2.</span> <span class="nav-text">网络监控</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#内存监控"><span class="nav-number">1.3.2.3.</span> <span class="nav-text">内存监控</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#磁盘监控"><span class="nav-number">1.3.2.4.</span> <span class="nav-text">磁盘监控</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#大型网站性能监控体系"><span class="nav-number">1.</span> <span class="nav-text">大型网站性能监控体系</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要做监控"><span class="nav-number">1.1.</span> <span class="nav-text">为什么要做监控</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#监控设计"><span class="nav-number">1.2.</span> <span class="nav-text">监控设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#从问题排查思路看监控设计"><span class="nav-number">1.2.1.</span> <span class="nav-text">从问题排查思路看监控设计</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#问题发现"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">问题发现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#定位问题"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">定位问题</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#监控的设计步骤"><span class="nav-number">1.2.2.</span> <span class="nav-text">监控的设计步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#关键监控项梳理"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">关键监控项梳理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关键监控项报警"><span class="nav-number">1.2.2.2.</span> <span class="nav-text">关键监控项报警</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#监控布点开发和设计"><span class="nav-number">1.2.2.3.</span> <span class="nav-text">监控布点开发和设计</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#监控展现设计"><span class="nav-number">1.2.2.4.</span> <span class="nav-text">监控展现设计</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#监控体系设计的目标和原则"><span class="nav-number">1.2.3.</span> <span class="nav-text">监控体系设计的目标和原则</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#准确性"><span class="nav-number">1.2.3.1.</span> <span class="nav-text">准确性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#完整性"><span class="nav-number">1.2.3.2.</span> <span class="nav-text">完整性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#实时性"><span class="nav-number">1.2.3.3.</span> <span class="nav-text">实时性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#细分性"><span class="nav-number">1.2.3.4.</span> <span class="nav-text">细分性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#聚合化"><span class="nav-number">1.2.3.5.</span> <span class="nav-text">聚合化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#图标化"><span class="nav-number">1.2.3.6.</span> <span class="nav-text">图标化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#可追溯"><span class="nav-number">1.2.3.7.</span> <span class="nav-text">可追溯</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#性能监控的关键指标"><span class="nav-number">1.3.</span> <span class="nav-text">性能监控的关键指标</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#应用监控"><span class="nav-number">1.3.1.</span> <span class="nav-text">应用监控</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#QPS"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">QPS</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#RT"><span class="nav-number">1.3.1.2.</span> <span class="nav-text">RT</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#并发数"><span class="nav-number">1.3.1.3.</span> <span class="nav-text">并发数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#异常监控"><span class="nav-number">1.3.1.4.</span> <span class="nav-text">异常监控</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#URL-监控"><span class="nav-number">1.3.1.5.</span> <span class="nav-text">URL 监控</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关键方法监控"><span class="nav-number">1.3.1.6.</span> <span class="nav-text">关键方法监控</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#JVM监控"><span class="nav-number">1.3.1.7.</span> <span class="nav-text">JVM监控</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#系统监控"><span class="nav-number">1.3.2.</span> <span class="nav-text">系统监控</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#CPU资源监控"><span class="nav-number">1.3.2.1.</span> <span class="nav-text">CPU资源监控</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#网络监控"><span class="nav-number">1.3.2.2.</span> <span class="nav-text">网络监控</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#内存监控"><span class="nav-number">1.3.2.3.</span> <span class="nav-text">内存监控</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#磁盘监控"><span class="nav-number">1.3.2.4.</span> <span class="nav-text">磁盘监控</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
